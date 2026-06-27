@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>MDS Contracting | Services - Waterproofing & Construction Experts</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo-area">
+        <img src="mds logo.jpeg" alt="MDS Logo" class="logo-img" onerror="this.src='https://placehold.co/200x200/0f67b3/white?text=MDS'">
+        <div><h1 class="logo-text">MDS <span class="text-primary">Contracting</span></h1><p class="logo-subtext">Riyadh, Saudi Arabia</p></div>
+      </div>
+      <div class="lang-center">
+        <button class="lang-btn-center active" data-lang="en">EN</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn-center" data-lang="ar">AR</button>
+      </div>
+      <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link" data-en="Home" data-ar="الرئيسية">Home</a>
+        <a href="services.html" class="nav-link active" data-en="Services" data-ar="الخدمات">Services</a>
+        <a href="about.html" class="nav-link" data-en="About Us" data-ar="من نحن">About Us</a>
+        <a href="contact.html" class="nav-link" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="index.html" class="mobile-nav-link" data-en="Home" data-ar="الرئيسية">Home</a>
+      <a href="services.html" class="mobile-nav-link active" data-en="Services" data-ar="الخدمات">Services</a>
+      <a href="about.html" class="mobile-nav-link" data-en="About Us" data-ar="من نحن">About Us</a>
+      <a href="contact.html" class="mobile-nav-link" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="services-hero-section">
+      <video autoplay muted loop playsinline class="services-hero-video">
+        <source src="services bck vadio.mp4" type="video/mp4">
+        <source src="https://cdn.pixabay.com/video/2021/08/30/89377-592267512_large.mp4" type="video/mp4">
+      </video>
+      <div class="services-hero-overlay"></div>
+      <div class="services-hero-content">
+        <div class="services-hero-badge">
+          <i class="fas fa-check-circle"></i> 
+          <span data-en="Trusted by 500+ Families" data-ar="موثوق من قبل أكثر من 500 عائلة">Trusted by 500+ Families</span>
+        </div>
+        <h1 class="services-hero-title">
+          <span data-en="Saudi's Most Trusted" data-ar="الأكثر ثقة في السعودية">Saudi's Most Trusted</span> 
+          <span class="hero-accent" data-en="Waterproofing & Construction Expert" data-ar="خبير العزل المائي والبناء">Waterproofing & Construction Expert</span>
+        </h1>
+        <p class="services-hero-subtitle" data-en="We protect your home, roof, basement and walls from water damage — with guaranteed results and 5-year warranty." data-ar="نحن نحمي منزلك وسقفك وقبوة وجدرانك من أضرار المياه - مع نتائج مضمونة وضمان لمدة 5 سنوات.">
+          We protect your home, roof, basement and walls from water damage — with guaranteed results and 5-year warranty.
+        </p>
+        <div class="services-hero-buttons">
+          <a href="https://wa.me/9665082247563?text=Hello%2C%20I%20need%20waterproofing%20services." class="btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> 
+            <span data-en="Get Free Quote on WhatsApp" data-ar="احصل على عرض أسعار مجاني على واتساب">Get Free Quote on WhatsApp</span>
+          </a>
+          <a href="#projects" class="btn-outline-white">
+            <span data-en="View Our Projects" data-ar="عرض مشاريعنا">View Our Projects</span>
+          </a>
+        </div>
+        <div class="services-hero-stats">
+          <div class="stat-item">
+            <span class="stat-number-hero" id="heroProjects">0</span>
+            <span class="stat-label-hero" data-en="Projects" data-ar="مشاريع">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number-hero" id="heroYears">0</span>
+            <span class="stat-label-hero" data-en="Years" data-ar="سنوات">Years</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number-hero" id="heroWarranty">0</span>
+            <span class="stat-label-hero" data-en="Year Warranty" data-ar="ضمان سنة">Year Warranty</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-shield-alt"></i> <span data-en="OUR SERVICES" data-ar="خدماتنا">OUR SERVICES</span></span>
+          <h2 class="section-title" data-en="Complete Waterproofing & Construction Solutions" data-ar="حلول كاملة للعزل المائي والبناء">Complete Waterproofing & Construction Solutions</h2>
+          <p class="section-subtitle" data-en="From roof leakage to complete building waterproofing, we offer expert solutions for every water damage problem." data-ar="من تسرب السقف إلى العزل المائي الكامل للمباني، نقدم حلولاً خبيرة لكل مشكلة من مشاكل أضرار المياه.">From roof leakage to complete building waterproofing, we offer expert solutions for every water damage problem.</p>
+          <div class="section-divider"></div>
+        </div>
+        <div class="services-grid">
+          <div class="flip-card service-card" data-flip><div class="flip-card-inner"><div class="flip-card-front"><img src="https://images.pexels.com/photos/209226/pexels-photo-209226.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img"><div class="card-body"><i class="fas fa-water text-primary text-3xl mb-3"></i><h3 class="card-title" data-en="Liquid Waterproofing" data-ar="العزل المائي السائل">Liquid Waterproofing</h3><p class="card-text" data-en="Spray or roller application" data-ar="تطبيق بالرش أو الأسطوانة">Spray or roller application</p></div></div><div class="flip-card-back"><i class="fas fa-info-circle text-4xl mb-3"></i><h3>Liquid Waterproofing</h3><div class="flip-details"><p><i class="fas fa-check-circle"></i> Spray or roller application</p><p><i class="fas fa-check-circle"></i> Elastomeric — stretches with cracks</p><p><i class="fas fa-check-circle"></i> UV resistant coating available</p><p><i class="fas fa-check-circle"></i> Long-lasting seamless finish</p><p class="best-for"><i class="fas fa-star"></i> Best for: Rooftops & exposed surfaces</p></div></div></div></div>
+          <div class="flip-card service-card" data-flip><div class="flip-card-inner"><div class="flip-card-front"><img src="https://images.pexels.com/photos/7512699/pexels-photo-7512699.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img"><div class="card-body"><i class="fas fa-layer-group text-primary text-3xl mb-3"></i><h3 class="card-title" data-en="Cementitious" data-ar="الأسمنتي">Cementitious</h3><p class="card-text" data-en="Cement-based system" data-ar="نظام قائم على الأسمنت">Cement-based system</p></div></div><div class="flip-card-back"><i class="fas fa-info-circle text-4xl mb-3"></i><h3>Cementitious</h3><div class="flip-details"><p><i class="fas fa-check-circle"></i> Basements, water tanks, swimming pools</p><p><i class="fas fa-check-circle"></i> Positive & negative side application</p><p><i class="fas fa-check-circle"></i> Breathable but water-tight</p><p class="best-for"><i class="fas fa-star"></i> Best for: Underground & wet areas</p></div></div></div></div>
+          <div class="flip-card service-card" data-flip><div class="flip-card-inner"><div class="flip-card-front"><img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img"><div class="card-body"><i class="fas fa-hard-hat text-primary text-3xl mb-3"></i><h3 class="card-title" data-en="Bituminous Membrane" data-ar="الغشاء البيتوميني">Bituminous Membrane</h3><p class="card-text" data-en="Torch-applied heavy-duty" data-ar="تطبيق باللهب - خدمات شاقة">Torch-applied heavy-duty</p></div></div><div class="flip-card-back"><i class="fas fa-info-circle text-4xl mb-3"></i><h3>Bituminous Membrane</h3><div class="flip-details"><p><i class="fas fa-check-circle"></i> Heavy traffic rooftops</p><p><i class="fas fa-check-circle"></i> Extremely durable — 15-20 years</p><p class="best-for"><i class="fas fa-star"></i> Best for: Industrial & commercial roofs</p></div></div></div></div>
+          <div class="flip-card service-card" data-flip><div class="flip-card-inner"><div class="flip-card-front"><img src="https://images.pexels.com/photos/162121/industrial-factory-industrial-building-plant-162121.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img"><div class="card-body"><i class="fas fa-tint-slash text-primary text-3xl mb-3"></i><h3 class="card-title" data-en="Polyurethane" data-ar="البولي يوريثين">Polyurethane</h3><p class="card-text" data-en="Highly elastic, UV stable" data-ar="مرونة عالية، ثابت للأشعة فوق البنفسجية">Highly elastic, UV stable</p></div></div><div class="flip-card-back"><i class="fas fa-info-circle text-4xl mb-3"></i><h3>Polyurethane</h3><div class="flip-details"><p><i class="fas fa-check-circle"></i> Car park decks, balconies, podiums</p><p><i class="fas fa-check-circle"></i> Chemical & abrasion resistant</p><p class="best-for"><i class="fas fa-star"></i> Best for: Exposed decks & parking areas</p></div></div></div></div>
+          <div class="flip-card service-card" data-flip><div class="flip-card-inner"><div class="flip-card-front"><img src="https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img"><div class="card-body"><i class="fas fa-building text-primary text-3xl mb-3"></i><h3 class="card-title" data-en="General Construction" data-ar="البناء العام">General Construction</h3><p class="card-text" data-en="Residential & commercial" data-ar="سكني وتجاري">Residential & commercial</p></div></div><div class="flip-card-back"><i class="fas fa-info-circle text-4xl mb-3"></i><h3>General Construction</h3><div class="flip-details"><p><i class="fas fa-check-circle"></i> Renovation & fitout works</p><p><i class="fas fa-check-circle"></i> Site supervision & project management</p><p class="best-for"><i class="fas fa-star"></i> Best for: Full turnkey projects</p></div></div></div></div>
+          <div class="flip-card service-card" data-flip><div class="flip-card-inner"><div class="flip-card-front"><img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img"><div class="card-body"><i class="fas fa-ruler-combined text-primary text-3xl mb-3"></i><h3 class="card-title" data-en="Concrete & Foundation" data-ar="الخرسانة والأساسات">Concrete & Foundation</h3><p class="card-text" data-en="Structural repairs" data-ar="إصلاحات هيكلية">Structural repairs</p></div></div><div class="flip-card-back"><i class="fas fa-info-circle text-4xl mb-3"></i><h3>Concrete & Foundation</h3><div class="flip-details"><p><i class="fas fa-check-circle"></i> Foundation repair & underpinning</p><p><i class="fas fa-check-circle"></i> Concrete crack injection</p><p class="best-for"><i class="fas fa-star"></i> Best for: Old buildings & damage repair</p></div></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-why-choose">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-question-circle"></i> <span data-en="WHY CHOOSE US" data-ar="لماذا تختارنا">WHY CHOOSE US</span></span>
+          <h2 class="section-title" data-en="Why Thousands of Families Trust Us" data-ar="لماذا تثق بنا الآلاف من العائلات">Why Thousands of Families Trust Us</h2>
+          <p class="section-subtitle" data-en="With over 10 years of experience in waterproofing and construction across Saudi Arabia, we have built a reputation for quality work, honest pricing, and long-lasting results." data-ar="مع أكثر من 10 سنوات من الخبرة في العزل المائي والبناء في جميع أنحاء المملكة العربية السعودية، بنينا سمعة طيبة من حيث الجودة والأسعار الصادقة والنتائج طويلة الأمد.">With over 10 years of experience in waterproofing and construction across Saudi Arabia, we have built a reputation for quality work, honest pricing, and long-lasting results.</p>
+          <div class="section-divider"></div>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card slide-left-card"><i class="fas fa-shield-alt feature-icon"></i><h3 class="feature-title" data-en="10 Years Experience" data-ar="10 سنوات خبرة">10 Years Experience</h3><p class="feature-text" data-en="A decade of proven expertise in waterproofing and construction across Saudi Arabia with 500+ successful projects." data-ar="عقد من الخبرة المثبتة في العزل المائي والبناء في جميع أنحاء المملكة العربية السعودية مع أكثر من 500 مشروع ناجح.">A decade of proven expertise in waterproofing and construction across Saudi Arabia with 500+ successful projects.</p></div>
+          <div class="feature-card slide-left-card"><i class="fas fa-building feature-icon"></i><h3 class="feature-title" data-en="500+ Projects Completed" data-ar="أكثر من 500 مشروع مكتمل">500+ Projects Completed</h3><p class="feature-text" data-en="Successfully delivered over 500 residential and commercial projects on time with zero defects." data-ar="تم تسليم أكثر من 500 مشروع سكني وتجاري في الوقت المحدد دون أي عيوب.">Successfully delivered over 500 residential and commercial projects on time with zero defects.</p></div>
+          <div class="feature-card slide-left-card"><i class="fas fa-star feature-icon"></i><h3 class="feature-title" data-en="100% Satisfaction Guaranteed" data-ar="رضا 100% مضمون">100% Satisfaction Guaranteed</h3><p class="feature-text" data-en="We don't close a project until you are fully satisfied with the results." data-ar="نحن لا نغلق المشروع حتى تكون راضيًا تمامًا عن النتائج.">We don't close a project until you are fully satisfied with the results.</p></div>
+          <div class="feature-card slide-left-card"><i class="fas fa-certificate feature-icon"></i><h3 class="feature-title" data-en="Licensed & Certified Team" data-ar="فريق مرخص ومعتمد">Licensed & Certified Team</h3><p class="feature-text" data-en="Our workers follow international waterproofing standards including ISO and ASTM." data-ar="يتبع عمالنا معايير العزل المائي الدولية بما في ذلك ISO و ASTM.">Our workers follow international waterproofing standards including ISO and ASTM.</p></div>
+          <div class="feature-card slide-left-card"><i class="fas fa-search feature-icon"></i><h3 class="feature-title" data-en="Free Site Inspection" data-ar="تفتيش الموقع مجانًا">Free Site Inspection</h3><p class="feature-text" data-en="We visit your site for free, assess the problem, and give honest recommendations." data-ar="نقوم بزيارة موقعك مجانًا وتقييم المشكلة وتقديم توصيات صادقة.">We visit your site for free, assess the problem, and give honest recommendations.</p></div>
+          <div class="feature-card slide-left-card"><i class="fas fa-clock feature-icon"></i><h3 class="feature-title" data-en="5 Year Warranty" data-ar="ضمان 5 سنوات">5 Year Warranty</h3><p class="feature-text" data-en="All our waterproofing work comes with a 5-year written warranty." data-ar="جميع أعمال العزل المائي لدينا تأتي مع ضمان كتابي لمدة 5 سنوات.">All our waterproofing work comes with a 5-year written warranty.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-stats-counter" id="bottomStatsSection">
+      <div class="container">
+        <div class="stats-counter-grid">
+          <div class="stat-counter-item"><div class="stat-counter-number" id="servicesStatProjects">0</div><p class="stat-counter-label" data-en="Projects Completed" data-ar="المشاريع المنجزة">Projects Completed</p></div>
+          <div class="stat-divider-vertical"></div>
+          <div class="stat-counter-item"><div class="stat-counter-number" id="servicesStatYears">0</div><p class="stat-counter-label" data-en="Years of Experience" data-ar="سنوات الخبرة">Years of Experience</p></div>
+          <div class="stat-divider-vertical"></div>
+          <div class="stat-counter-item"><div class="stat-counter-number" id="servicesStatWorkers">0</div><p class="stat-counter-label" data-en="Expert Workers" data-ar="عمال خبراء">Expert Workers</p></div>
+          <div class="stat-divider-vertical"></div>
+          <div class="stat-counter-item"><div class="stat-counter-number" id="servicesStatSatisfaction">0</div><p class="stat-counter-label" data-en="Client Satisfaction" data-ar="رضا العملاء">Client Satisfaction</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-how-we-work">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-chart-line"></i> <span data-en="OUR PROCESS" data-ar="عمليتنا">OUR PROCESS</span></span>
+          <h2 class="section-title" data-en="How We Work — Simple & Transparent" data-ar="كيف نعمل - بسيط وشفاف">How We Work — Simple & Transparent</h2>
+          <p class="section-subtitle" data-en="We follow a clear 4-step process to ensure every project is completed on time, on budget, and to the highest standard." data-ar="نتبع عملية واضحة من 4 خطوات لضمان اكتمال كل مشروع في الوقت المحدد وضمن الميزانية وبأعلى مستوى.">We follow a clear 4-step process to ensure every project is completed on time, on budget, and to the highest standard.</p>
+          <div class="section-divider"></div>
+        </div>
+        <div class="process-timeline">
+          <div class="process-step slide-up-card"><div class="process-number">1</div><div class="process-icon"><i class="fas fa-phone-alt"></i></div><h3 class="process-title" data-en="Free Consultation" data-ar="استشارة مجانية">Free Consultation</h3><p class="process-text" data-en="Call or WhatsApp us. Tell us your problem and location." data-ar="اتصل بنا أو واتساب. أخبرنا بمشكلتك وموقعك.">Call or WhatsApp us. Tell us your problem and location.</p></div>
+          <div class="process-connector"></div>
+          <div class="process-step slide-up-card"><div class="process-number">2</div><div class="process-icon"><i class="fas fa-search"></i></div><h3 class="process-title" data-en="Site Inspection" data-ar="تفتيش الموقع">Site Inspection</h3><p class="process-text" data-en="Our expert visits your site and prepares a detailed solution." data-ar="خبيرنا يزور موقعك ويعد حلاً مفصلاً.">Our expert visits your site and prepares a detailed solution.</p></div>
+          <div class="process-connector"></div>
+          <div class="process-step slide-up-card"><div class="process-number">3</div><div class="process-icon"><i class="fas fa-hammer"></i></div><h3 class="process-title" data-en="Work Execution" data-ar="تنفيذ العمل">Work Execution</h3><p class="process-text" data-en="Our certified team executes using premium materials." data-ar="فريقنا المعتمد ينفذ باستخدام مواد متميزة.">Our certified team executes using premium materials.</p></div>
+          <div class="process-connector"></div>
+          <div class="process-step slide-up-card"><div class="process-number">4</div><div class="process-icon"><i class="fas fa-shield-check"></i></div><h3 class="process-title" data-en="Quality Check & Warranty" data-ar="فحص الجودة والضمان">Quality Check & Warranty</h3><p class="process-text" data-en="Full quality inspection and 5-year written warranty." data-ar="فحص جودة كامل وضمان كتابي لمدة 5 سنوات.">Full quality inspection and 5-year written warranty.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-images"></i> <span data-en="OUR PROJECTS" data-ar="مشاريعنا">OUR PROJECTS</span></span>
+          <h2 class="section-title" data-en="Our Recent Work in Saudi Arabia" data-ar="أعمالنا الأخيرة في المملكة العربية السعودية">Our Recent Work in Saudi Arabia</h2>
+          <p class="section-subtitle" data-en="Take a look at some of our recently completed waterproofing and construction projects across the Kingdom." data-ar="ألقِ نظرة على بعض مشاريع العزل المائي والبناء التي تم إنجازها مؤخرًا في جميع أنحاء المملكة.">Take a look at some of our recently completed waterproofing and construction projects across the Kingdom.</p>
+          <div class="section-divider"></div>
+        </div>
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all" data-en="All" data-ar="الكل">All</button>
+          <button class="filter-btn" data-filter="waterproofing" data-en="Waterproofing" data-ar="العزل المائي">Waterproofing</button>
+          <button class="filter-btn" data-filter="construction" data-en="Construction" data-ar="البناء">Construction</button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card slide-left-card" data-category="waterproofing"><img src="https://images.pexels.com/photos/209226/pexels-photo-209226.jpeg?auto=compress&cs=tinysrgb&w=600" class="project-img"><div class="project-overlay"><h3 class="project-title" data-en="Roof Waterproofing" data-ar="عزل السقف">Roof Waterproofing</h3><p class="project-location"><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p></div></div>
+          <div class="project-card slide-left-card" data-category="waterproofing"><img src="https://images.pexels.com/photos/7512699/pexels-photo-7512699.jpeg?auto=compress&cs=tinysrgb&w=600" class="project-img"><div class="project-overlay"><h3 class="project-title" data-en="Basement Waterproofing" data-ar="عزل القبو">Basement Waterproofing</h3><p class="project-location"><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p></div></div>
+          <div class="project-card slide-left-card" data-category="waterproofing"><img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600" class="project-img"><div class="project-overlay"><h3 class="project-title" data-en="Terrace Waterproofing" data-ar="عزل التراس">Terrace Waterproofing</h3><p class="project-location"><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p></div></div>
+          <div class="project-card slide-left-card" data-category="construction"><img src="https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&w=600" class="project-img"><div class="project-overlay"><h3 class="project-title" data-en="Residential Villa" data-ar="فيلا سكنية">Residential Villa</h3><p class="project-location"><i class="fas fa-map-marker-alt"></i> Jeddah, Saudi Arabia</p></div></div>
+          <div class="project-card slide-left-card" data-category="construction"><img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=600" class="project-img"><div class="project-overlay"><h3 class="project-title" data-en="Commercial Tower" data-ar="برج تجاري">Commercial Tower</h3><p class="project-location"><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p></div></div>
+          <div class="project-card slide-left-card" data-category="waterproofing"><img src="https://images.pexels.com/photos/162121/industrial-factory-industrial-building-plant-162121.jpeg?auto=compress&cs=tinysrgb&w=600" class="project-img"><div class="project-overlay"><h3 class="project-title" data-en="Heat Proofing Coating" data-ar="طلاء عزل حراري">Heat Proofing Coating</h3><p class="project-location"><i class="fas fa-map-marker-alt"></i> Jeddah, Saudi Arabia</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-star"></i> <span data-en="CLIENT REVIEWS" data-ar="مراجعات العملاء">CLIENT REVIEWS</span></span>
+          <h2 class="section-title" data-en="What Our Customers Say" data-ar="ماذا يقول عملاؤنا">What Our Customers Say</h2>
+          <p class="section-subtitle" data-en="We have served hundreds of happy clients across Saudi Arabia. Here is what some of them say about our work." data-ar="لقد خدمنا المئات من العملاء السعداء في جميع أنحاء المملكة العربية السعودية. إليكم ما يقوله بعضهم عن عملنا.">We have served hundreds of happy clients across Saudi Arabia. Here is what some of them say about our work.</p>
+          <div class="section-divider"></div>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card-page slide-left-card"><i class="fas fa-quote-left quote-icon"></i><div class="stars">★★★★★</div><p class="testimonial-text">Excellent work! They fixed our roof leakage in Riyadh that had been troubling us for years. Very professional team.</p><div class="testimonial-author"><strong>Khalid Al-Otaibi</strong><span>Riyadh</span></div></div>
+          <div class="testimonial-card-page slide-left-card"><i class="fas fa-quote-left quote-icon"></i><div class="stars">★★★★★</div><p class="testimonial-text">Got our villa basement waterproofing done in Jeddah. Results are amazing. No more seepage after heavy rain.</p><div class="testimonial-author"><strong>Fatima Al-Rashid</strong><span>Jeddah</span></div></div>
+          <div class="testimonial-card-page slide-left-card"><i class="fas fa-quote-left quote-icon"></i><div class="stars">★★★★★</div><p class="testimonial-text">Best construction partner in Riyadh. Their waterproofing guarantees are solid and work is top-notch.</p><div class="testimonial-author"><strong>Mohammed Al-Saud</strong><span>Riyadh</span></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div><i class="fas fa-hard-hat footer-icon"></i><h3 class="footer-title">MDS Contracting</h3><p class="footer-text" data-en="Leading waterproofing & construction experts in Saudi Arabia." data-ar="خبراء رائدون في العزل المائي والبناء في المملكة العربية السعودية.">Leading waterproofing & construction experts in Saudi Arabia.</p></div>
+      <div><h4 class="footer-heading" data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4><ul class="footer-links"><li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li><li><a href="services.html" data-en="Services" data-ar="الخدمات">Services</a></li><li><a href="about.html" data-en="About Us" data-ar="من نحن">About Us</a></li><li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li></ul></div>
+      <div><h4 class="footer-heading" data-en="Our Services" data-ar="خدماتنا">Our Services</h4><ul class="footer-links"><li><i class="fas fa-water text-primary text-xs mr-2"></i> <span data-en="Liquid Waterproofing" data-ar="العزل المائي السائل">Liquid Waterproofing</span></li><li><i class="fas fa-layer-group text-primary text-xs mr-2"></i> <span data-en="Cementitious" data-ar="الأسمنتي">Cementitious</span></li><li><i class="fas fa-hard-hat text-primary text-xs mr-2"></i> <span data-en="Bituminous Membrane" data-ar="الغشاء البيتوميني">Bituminous Membrane</span></li><li><i class="fas fa-building text-primary text-xs mr-2"></i> <span data-en="General Construction" data-ar="البناء العام">General Construction</span></li></ul></div>
+      <div><h4 class="footer-heading" data-en="Follow Us" data-ar="تابعونا">Follow Us</h4><div class="social-icons"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div><p class="follow-text" data-en="Stay connected for updates" data-ar="ابق على اتصال للحصول على التحديثات">Stay connected for updates</p></div>
+    </div>
+    <div class="footer-bottom">© 2026 MDS Contracting – Riyadh, Saudi Arabia | <span data-en="International Waterproofing & Construction Standards" data-ar="معايير العزل المائي والبناء الدولية">International Waterproofing & Construction Standards</span></div>
+  </footer>
+
+  <a href="https://wa.me/9665082247563?text=Hello%2C%20I%20need%20waterproofing%20services." class="floating-whatsapp" target="_blank">
+    <div class="pulse-ring"></div>
+    <i class="fab fa-whatsapp"></i>
+    <span class="tooltip" data-en="Chat with us on WhatsApp" data-ar="تحدث معنا على واتساب">Chat with us on WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
