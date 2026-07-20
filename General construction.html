@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>General Construction Services in Saudi Arabia | MDS Contracting</title>
+  <meta name="description" content="Residential and commercial general construction, renovation and fit-out services in Saudi Arabia with full project management and site supervision.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: white;
+      scroll-behavior: smooth;
+    }
+    :root {
+      --primary: #0f67b3;
+      --primary-dark: #0a4e8a;
+      --accent: #14b8b6;
+      --dark-navy: #0A1628;
+      --whatsapp: #25D366;
+      --whatsapp-dark: #128C7E;
+    }
+    .text-primary { color: var(--primary); }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: white;
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #e5e7eb;
+      transition: box-shadow 0.3s ease;
+    }
+    .navbar.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+    .nav-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0.5rem 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-shrink: 0;
+    }
+    .logo-img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+    .logo-text {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: #1f2937;
+      line-height: 1.1;
+    }
+    .logo-subtext {
+      font-size: 0.5rem;
+      color: #6b7280;
+      margin-top: -0.1rem;
+      line-height: 1;
+    }
+    .logo-area > div {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+    .lang-center {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      background: #f1f5f9;
+      padding: 0.15rem 0.4rem;
+      border-radius: 1.5rem;
+      flex-shrink: 0;
+    }
+    .lang-btn-center {
+      background: transparent;
+      border: none;
+      padding: 0.15rem 0.35rem;
+      border-radius: 1.2rem;
+      cursor: pointer;
+      font-size: 0.6rem;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+    .lang-btn-center.active {
+      background: var(--primary);
+      color: white;
+    }
+    .lang-divider {
+      color: #cbd5e1;
+      font-size: 0.6rem;
+    }
+    .mobile-menu-btn {
+      font-size: 1.2rem;
+      color: #4b5563;
+      cursor: pointer;
+      padding: 0.2rem 0.3rem;
+      flex-shrink: 0;
+    }
+    .nav-links {
+      display: none;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: #4b5563;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+      position: relative;
+    }
+    .nav-link:hover, .nav-link.active { color: var(--primary); }
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--primary);
+      border-radius: 4px;
+    }
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      padding: 0.5rem 0.75rem 0.75rem;
+      gap: 0.5rem;
+    }
+    .mobile-menu.show { display: flex; }
+    .mobile-nav-link {
+      padding: 0.4rem 0.6rem;
+      text-decoration: none;
+      color: #4b5563;
+      border-radius: 0.5rem;
+      font-size: 0.85rem;
+    }
+    .mobile-nav-link.active {
+      background-color: #e0f2fe;
+      color: var(--primary);
+      font-weight: 600;
+    }
+    @media (min-width: 768px) {
+      .nav-links { display: flex; }
+      .mobile-menu-btn { display: none; }
+      .logo-img { width: 48px; height: 48px; }
+      .logo-text { font-size: 1.5rem; }
+      .logo-subtext { font-size: 0.7rem; }
+      .lang-btn-center { font-size: 0.75rem; padding: 0.25rem 0.6rem; }
+      .lang-center { padding: 0.25rem 0.75rem; gap: 0.5rem; }
+      .nav-container { padding: 0.75rem 1.5rem; }
+    }
+    @media (max-width: 480px) {
+      .nav-container { padding: 0.4rem 0.5rem; gap: 0.3rem; }
+      .logo-img { width: 28px; height: 28px; }
+      .logo-text { font-size: 0.75rem; }
+      .logo-subtext { font-size: 0.45rem; }
+      .lang-center { padding: 0.1rem 0.3rem; }
+      .lang-btn-center { font-size: 0.5rem; padding: 0.1rem 0.25rem; }
+      .mobile-menu-btn { font-size: 1rem; }
+    }
+
+    /* ===== SECTION HEADERS ===== */
+    .section-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .section-tag {
+      color: var(--primary);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.8rem;
+      display: inline-block;
+    }
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+    .section-divider {
+      width: 4rem;
+      height: 0.25rem;
+      background-color: var(--primary);
+      margin: 0.8rem auto 0;
+      border-radius: 9999px;
+    }
+    .section-subtitle {
+      color: #6b7280;
+      max-width: 42rem;
+      margin: 1rem auto 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .section-title { font-size: 2.5rem; }
+      .section-header { margin-bottom: 3rem; }
+    }
+    @media (max-width: 480px) {
+      .section-title { font-size: 1.3rem; }
+      .section-subtitle { font-size: 0.8rem; }
+    }
+
+    /* ===== HERO ===== */
+    .page-hero-section {
+      position: relative;
+      width: 100%;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 1rem;
+      overflow: hidden;
+    }
+    .hero-bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .page-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.65);
+      z-index: 1;
+    }
+    .page-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .page-hero-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .page-hero-subtitle {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .page-hero-title { font-size: 3.5rem; }
+      .page-hero-subtitle { font-size: 1.2rem; }
+    }
+    @media (max-width: 480px) {
+      .page-hero-section { min-height: 35vh; padding: 3rem 1rem; }
+      .page-hero-title { font-size: 1.8rem; }
+      .page-hero-subtitle { font-size: 0.85rem; }
+    }
+
+    /* ===== BUTTONS ===== */
+    .hero-buttons {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .btn-primary {
+      background-color: var(--primary);
+      color: white;
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      font-weight: bold;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+    .btn-outline-white {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      padding: 0.7rem 2rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.1); }
+    .btn-whatsapp {
+      background-color: var(--whatsapp);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+    }
+    .btn-whatsapp:hover {
+      background-color: var(--whatsapp-dark);
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      background: transparent;
+      padding: 0.7rem 2rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+    }
+    .btn-outline:hover { background: var(--primary); color: white; }
+
+    /* ===== CONTAINER / SECTIONS ===== */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .section-white { padding: 4rem 1rem; background: white; }
+    .section-gradient { padding: 4rem 1rem; background: linear-gradient(to right, #eff6ff, #ecfeff); }
+    .section-why-choose { background: #f8fafc; padding: 4rem 1rem; }
+    .section-projects { padding: 4rem 1rem; background: #f8fafc; }
+    .section-how-we-work { padding: 4rem 1rem; background: white; }
+    .faq-section { background: #f8fafc; padding: 4rem 1rem; }
+
+    .two-column {
+      display: grid;
+      gap: 2rem;
+      align-items: center;
+    }
+    @media (min-width: 768px) {
+      .two-column { grid-template-columns: repeat(2, 1fr); gap: 3rem; }
+    }
+    .story-text {
+      color: #374151;
+      font-size: 1rem;
+      line-height: 1.625;
+      text-align: left;
+    }
+    .mt-4 { margin-top: 1rem; }
+
+    /* ===== FEATURES ===== */
+    .features-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .feature-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      border: 1px solid #e5e7eb;
+    }
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 30px -12px rgba(15,103,179,0.25);
+      border: 1px solid var(--primary);
+    }
+    .feature-icon { font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; }
+    .feature-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; color: #1f2937; text-align: center; }
+    .feature-text { color: #6b7280; font-size: 0.9rem; line-height: 1.5; text-align: center; }
+    @media (min-width: 768px) { .features-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .features-grid { grid-template-columns: repeat(4, 1fr); } }
+
+    /* ===== PROCESS ===== */
+    .process-timeline { display: flex; flex-direction: column; gap: 1.5rem; }
+    .process-step {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      border: 1px solid #e5e7eb;
+      transition: all 0.3s ease;
+    }
+    .process-step:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 30px -12px rgba(15,103,179,0.25);
+      border: 1px solid var(--primary);
+    }
+    .process-number {
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin: 0 auto 1rem;
+    }
+    .process-icon { font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .process-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; color: #1f2937; text-align: center; }
+    .process-text { color: #6b7280; font-size: 0.9rem; line-height: 1.5; text-align: center; }
+    .process-connector { display: none; }
+    @media (min-width: 768px) {
+      .process-timeline { flex-direction: row; }
+      .process-step { flex: 1; }
+      .process-connector { display: flex; align-items: center; color: var(--primary); font-size: 1.5rem; }
+      .process-connector::before { content: '→'; }
+    }
+
+    /* ===== FAQ ===== */
+    .faq-grid { display: grid; gap: 1rem; }
+    .faq-item {
+      background: white;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border: 1px solid #eef2ff;
+      transition: all 0.3s ease;
+    }
+    .faq-item:hover { border-color: var(--primary); }
+    .faq-question {
+      padding: 1.2rem 1.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      color: #1f2937;
+      transition: all 0.3s;
+      background: white;
+    }
+    .faq-question:hover { color: var(--primary); background: #f8fafc; }
+    .faq-question span { flex: 1; padding-right: 1rem; text-align: left; }
+    .faq-question i { transition: transform 0.3s ease; color: var(--primary); }
+    .faq-item.active .faq-question i { transform: rotate(180deg); }
+    .faq-answer {
+      padding: 0 1.5rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-out, padding 0.3s ease;
+      color: #6b7280;
+      line-height: 1.7;
+      font-size: 0.9rem;
+      background: #fefefe;
+      text-align: left;
+    }
+    .faq-item.active .faq-answer {
+      padding: 0 1.5rem 1.2rem;
+      max-height: 500px;
+    }
+
+    /* ===== CTA ===== */
+    .cta-section {
+      text-align: center;
+      padding: 2rem;
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 30px -10px rgba(0,0,0,0.08);
+    }
+
+    /* ===== FOOTER ===== */
+    .footer { background-color: #111827; color: #9ca3af; padding: 3rem 1rem; }
+    .footer-container { max-width: 1280px; margin: 0 auto; display: grid; gap: 2rem; }
+    .footer-icon { font-size: 1.5rem; color: var(--primary); }
+    .footer-title { color: white; font-weight: 700; font-size: 1.2rem; margin-top: 0.5rem; }
+    .footer-text { font-size: 0.875rem; }
+    .footer-heading { color: white; font-weight: 600; margin-bottom: 1rem; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 0.5rem; }
+    .footer-links a { color: #9ca3af; text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--primary); }
+    .social-icons { display: flex; gap: 1rem; font-size: 1.2rem; }
+    .social-icons a { color: #9ca3af; transition: color 0.2s; }
+    .social-icons a:hover { color: var(--primary); }
+    .follow-text { font-size: 0.75rem; margin-top: 0.75rem; text-align: center; }
+    .footer-bottom {
+      border-top: 1px solid #1f2937;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      text-align: center;
+      font-size: 0.75rem;
+    }
+    @media (min-width: 768px) { .footer-container { grid-template-columns: repeat(4, 1fr); } }
+    @media (max-width: 480px) {
+      .footer { padding: 1.5rem 0.8rem; }
+      .footer-container { gap: 1.2rem; }
+      .footer-title { font-size: 0.9rem; text-align: center; }
+      .footer-text { font-size: 0.7rem; text-align: center; }
+      .footer-heading { font-size: 0.85rem; text-align: center; }
+      .footer-links li { text-align: center; font-size: 0.7rem; }
+      .social-icons { justify-content: center; }
+    }
+
+    /* ===== WHATSAPP FLOATING ===== */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--whatsapp);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.6rem;
+      z-index: 9999;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+      transition: all 0.3s ease;
+    }
+    .floating-whatsapp:hover { background-color: var(--whatsapp-dark); transform: scale(1.08); }
+    .pulse-ring {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: var(--whatsapp);
+      animation: pulse 2s infinite;
+      z-index: -1;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(1.6); opacity: 0; }
+    }
+    .tooltip {
+      position: absolute;
+      right: 62px;
+      background: #1f2937;
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 0.5rem;
+      font-size: 0.7rem;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s;
+    }
+    .floating-whatsapp:hover .tooltip { opacity: 1; visibility: visible; }
+    @media (max-width: 480px) {
+      .floating-whatsapp { width: 40px; height: 40px; font-size: 1.1rem; bottom: 12px; right: 12px; }
+      .tooltip { display: none; }
+    }
+
+    /* ===== BEFORE / AFTER SLIDER - NO ZOOM ===== */
+        .ba-gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    @media (min-width: 768px) {
+      .ba-gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .ba-gallery-grid .ba-slider-wrapper {
+      max-width: none;
+      margin: 0;
+    }
+
+    .ba-slider-wrapper {
+      max-width: 900px;
+      margin: 0 auto 1.5rem;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.25);
+      background: #0a1628;
+      position: relative;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: none;
+    }
+
+    .ba-slider-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 66.67%;
+      background: #1f2937;
+      overflow: hidden;
+    }
+
+    .ba-slider-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      pointer-events: none;
+      -webkit-user-drag: none;
+    }
+
+    .ba-img-before {
+      z-index: 1;
+    }
+
+    .ba-img-after-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 2;
+      transition: none;
+      clip-path: inset(0 50% 0 0);
+    }
+    .ba-img-after-wrap img {
+      width: 100%;
+      height: 100%;
+      left: 0;
+    }
+
+    .ba-handle {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      z-index: 5;
+      transform: translateX(-50%);
+      cursor: ew-resize;
+      touch-action: none;
+    }
+    .ba-handle::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.7);
+      transform: translateX(-50%);
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+    .ba-handle:hover::before,
+    .ba-handle.active::before {
+      background: #ffffff;
+      box-shadow: 0 0 20px rgba(15, 103, 179, 0.6);
+    }
+
+    .ba-knob {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 52px;
+      height: 52px;
+      background: #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 2px solid rgba(255, 255, 255, 0.9);
+    }
+    .ba-handle:hover .ba-knob,
+    .ba-handle.active .ba-knob {
+      transform: translate(-50%, -50%) scale(1.08);
+      box-shadow: 0 6px 28px rgba(15, 103, 179, 0.45);
+      border-color: #0f67b3;
+    }
+    .ba-knob svg {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: #1f2937;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .ba-handle:hover .ba-knob svg path,
+    .ba-handle.active .ba-knob svg path {
+      stroke: #0f67b3;
+    }
+
+    .ba-step-counter {
+      font-size: 0.6rem;
+      font-weight: 700;
+      color: #1f2937;
+      background: rgba(255,255,255,0.9);
+      padding: 0.05rem 0.4rem;
+      border-radius: 0.8rem;
+      margin-top: 0.1rem;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+    }
+    .ba-handle:hover .ba-step-counter,
+    .ba-handle.active .ba-step-counter {
+      color: #0f67b3;
+    }
+
+    .ba-labels {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 0;
+      right: 0;
+      z-index: 6;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      pointer-events: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    }
+    .ba-label-before {
+      background: rgba(0, 0, 0, 0.55);
+      padding: 0.3rem 1.2rem;
+      border-radius: 2rem;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .ba-label-after {
+      background: rgba(15, 103, 179, 0.7);
+      padding: 0.3rem 1.2rem;
+      border-radius: 2rem;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .ba-drag-hint {
+      position: absolute;
+      bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 4;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.2rem 1rem;
+      border-radius: 2rem;
+      backdrop-filter: blur(4px);
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 1;
+      transition: opacity 0.6s;
+    }
+    .ba-drag-hint.hidden { opacity: 0; }
+
+    @media (max-width: 768px) {
+      .ba-slider-container { padding-bottom: 75%; }
+      .ba-knob { width: 42px; height: 42px; }
+      .ba-knob svg { width: 16px; height: 16px; }
+      .ba-step-counter { font-size: 0.5rem; }
+      .ba-labels { font-size: 0.7rem; padding: 0 0.8rem; bottom: 1rem; }
+      .ba-label-before, .ba-label-after { padding: 0.2rem 0.8rem; }
+      .ba-drag-hint { font-size: 0.55rem; bottom: 4rem; }
+    }
+    @media (max-width: 480px) {
+      .ba-slider-wrapper { border-radius: 0.8rem; margin-bottom: 1rem; }
+      .ba-slider-container { padding-bottom: 80%; }
+      .ba-knob { width: 36px; height: 36px; }
+      .ba-knob svg { width: 12px; height: 12px; }
+      .ba-step-counter { font-size: 0.4rem; padding: 0.02rem 0.3rem; }
+      .ba-labels { font-size: 0.55rem; padding: 0 0.5rem; bottom: 0.7rem; }
+      .ba-label-before, .ba-label-after { padding: 0.1rem 0.5rem; }
+      .ba-drag-hint { font-size: 0.45rem; bottom: 3.2rem; padding: 0.1rem 0.5rem; }
+    }
+
+    .rtl .ba-handle {
+      left: 50%;
+      transform: translateX(50%);
+    }
+    .rtl .ba-labels {
+      flex-direction: row-reverse;
+    }
+    .rtl .ba-label-before { order: 2; }
+    .rtl .ba-label-after { order: 1; }
+
+    .slide-left-card {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: all 0.7s ease-out;
+    }
+    .slide-left-card.animate-in {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .slide-up-card {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.7s ease-out;
+    }
+    .slide-up-card.animate-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    .rtl .ba-drag-hint { direction: ltr; }
+
+    /* ===== IMAGE HOVER ZOOM ===== */
+    .img-hover-zoom {
+      width: 100%;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+    }
+    .img-hover-zoom .zoom-img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .img-hover-zoom:hover .zoom-img {
+      transform: scale(1.08);
+    }
+</style>
+</head>
+<body>
+
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo-area">
+        <img src="mds logo.jpeg" alt="MDS Logo" class="logo-img" onerror="this.src='https://placehold.co/200x200/0f67b3/white?text=MDS'">
+        <div><h1 class="logo-text">MDS <span class="text-primary">Contracting</span></h1><p class="logo-subtext">Riyadh, Saudi Arabia</p></div>
+      </div>
+      <div class="lang-center">
+        <button class="lang-btn-center active" data-lang="en">EN</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn-center" data-lang="ar">AR</button>
+      </div>
+      <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link" data-en="Home" data-ar="الرئيسية">Home</a>
+        <a href="services.html" class="nav-link active" data-en="Services" data-ar="الخدمات">Services</a>
+        <a href="about.html" class="nav-link" data-en="About Us" data-ar="من نحن">About Us</a>
+        <a href="contact.html" class="nav-link" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="index.html" class="mobile-nav-link" data-en="Home" data-ar="الرئيسية">Home</a>
+      <a href="services.html" class="mobile-nav-link active" data-en="Services" data-ar="الخدمات">Services</a>
+      <a href="about.html" class="mobile-nav-link" data-en="About Us" data-ar="من نحن">About Us</a>
+      <a href="contact.html" class="mobile-nav-link" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero-section">
+      <img src="images/other/General Construction.jpg" alt="General Construction" class="hero-bg-image">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1 class="page-hero-title"><span data-en="General Construction" data-ar="البناء العام">General Construction</span></h1>
+        <p class="page-hero-subtitle" data-en="Full turnkey construction, renovation and fit-out services for residential and commercial projects — backed by professional site supervision." data-ar="خدمات بناء وتجديد وتشطيب متكاملة للمشاريع السكنية والتجارية - مدعومة بإشراف احترافي على الموقع.">Full turnkey construction, renovation and fit-out services for residential and commercial projects — backed by professional site supervision.</p>
+        <div class="hero-buttons" style="justify-content:center; margin-top:1.5rem;">
+          <a href="https://wa.me/9665082247563?text=Hello%2C%20I%20need%20general%20construction%20services." class="btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span data-en="Get Free Quote on WhatsApp" data-ar="احصل على عرض أسعار مجاني على واتساب">Get Free Quote on WhatsApp</span>
+          </a>
+          <a href="contact.html#contactForm" class="btn-outline-white">
+            <span data-en="Request Free Inspection" data-ar="اطلب تفتيشًا مجانيًا">Request Free Inspection</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-building"></i> <span data-en="OVERVIEW" data-ar="نظرة عامة">OVERVIEW</span></span>
+          <h2 class="section-title" data-en="Full Turnkey Construction & Renovation Solutions" data-ar="حلول بناء وتجديد متكاملة">Full Turnkey Construction & Renovation Solutions</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="two-column">
+          <div>
+            <p class="story-text" data-en="Our general construction service covers everything from villa construction and renovation to commercial fit-outs, handled by an experienced team of engineers, supervisors, and skilled labor. We manage every stage of the project so you don't have to coordinate multiple contractors yourself." data-ar="تغطي خدمة البناء العام لدينا كل شيء من بناء الفلل وتجديدها إلى التشطيبات التجارية، ويديرها فريق من المهندسين والمشرفين والعمالة الماهرة ذوي الخبرة.">Our general construction service covers everything from villa construction and renovation to commercial fit-outs, handled by an experienced team of engineers, supervisors, and skilled labor. We manage every stage of the project so you don't have to coordinate multiple contractors yourself.</p>
+            <p class="story-text mt-4" data-en="From initial planning and design approval to final handover, our project managers keep your build on schedule, on budget, and to international construction standards — the same standards we apply to our waterproofing work." data-ar="من التخطيط الأولي والموافقة على التصميم إلى التسليم النهائي، يحافظ مديرو مشاريعنا على جدولك الزمني وميزانيتك ومعايير البناء الدولية.">From initial planning and design approval to final handover, our project managers keep your build on schedule, on budget, and to international construction standards — the same standards we apply to our waterproofing work.</p>
+          </div>
+          <div class="img-hover-zoom">
+            <img src="Genenral Construction.jfif" alt="General Construction" class="zoom-img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-why-choose">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-exclamation-triangle"></i> <span data-en="PROBLEMS WE SOLVE" data-ar="المشاكل التي نحلها">PROBLEMS WE SOLVE</span></span>
+          <h2 class="section-title" data-en="Common Issues We Fix" data-ar="المشاكل الشائعة التي نصلحها">Common Issues We Fix</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card slide-left-card"><i class="fas fa-people-carry feature-icon"></i><h3 class="feature-title" data-en="Managing Multiple Contractors" data-ar="إدارة مقاولين متعددين">Managing Multiple Contractors</h3><p class="feature-text" data-en="One team handles structural, electrical, plumbing, and finishing work under a single project manager." data-ar="فريق واحد يتولى جميع الأعمال تحت مدير مشروع واحد.">One team handles structural, electrical, plumbing, and finishing work under a single project manager.</p></div>
+          <div class="feature-card slide-left-card"><i class="fas fa-calendar-times feature-icon"></i><h3 class="feature-title" data-en="Project Delays" data-ar="تأخيرات المشروع">Project Delays</h3><p class="feature-text" data-en="Structured project management keeps timelines on track with clear milestones." data-ar="إدارة مشروع منظمة تحافظ على الجدول الزمني.">Structured project management keeps timelines on track with clear milestones.</p></div>
+          <div class="feature-card slide-left-card"><i class="fas fa-certificate feature-icon"></i><h3 class="feature-title" data-en="Unlicensed or Unreliable Contractors" data-ar="مقاولون غير مرخصين">Unlicensed or Unreliable Contractors</h3><p class="feature-text" data-en="Licensed, certified team following international building standards on every project." data-ar="فريق مرخص ومعتمد يتبع معايير البناء الدولية.">Licensed, certified team following international building standards on every project.</p></div>
+          <div class="feature-card slide-left-card"><i class="fas fa-home feature-icon"></i><h3 class="feature-title" data-en="Outdated or Damaged Properties" data-ar="عقارات قديمة أو متضررة">Outdated or Damaged Properties</h3><p class="feature-text" data-en="Full renovation services to modernize and restore villas and commercial spaces." data-ar="خدمات تجديد كاملة لتحديث وترميم الفلل والمساحات التجارية.">Full renovation services to modernize and restore villas and commercial spaces.</p></div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ==================== BEFORE / AFTER SLIDER ==================== -->
+    <section class="section-projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-images"></i> <span data-en="BEFORE & AFTER" data-ar="قبل وبعد">BEFORE & AFTER</span></span>
+          <h2 class="section-title" data-en="See the Difference We Make" data-ar="شاهد الفرق الذي نصنعه">See the Difference We Make</h2>
+          <p class="section-subtitle" data-en="Real results from our general construction projects across Saudi Arabia." data-ar="نتائج حقيقية من مشاريع البناء العام في جميع أنحاء المملكة العربية السعودية.">Real results from our general construction projects across Saudi Arabia.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="ba-gallery-grid">
+                <div class="ba-slider-wrapper">
+                    <div class="ba-slider-container">
+                        <img class="ba-img-before" src="https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 1" />
+                        <div class="ba-img-after-wrap">
+                            <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 1" />
+                        </div>
+                        <div class="ba-handle">
+                            <div class="ba-knob">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M9 6L15 12L9 18" />
+                                    <path d="M15 6L9 12L15 18" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ba-labels">
+                            <span class="ba-label-before">Before</span>
+                            <span class="ba-label-after">After</span>
+                        </div>
+                        <div class="ba-drag-hint">← drag to compare →</div>
+                    </div>
+                </div>
+                <div class="ba-slider-wrapper">
+                    <div class="ba-slider-container">
+                        <img class="ba-img-before" src="https://images.pexels.com/photos/209226/pexels-photo-209226.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 2" />
+                        <div class="ba-img-after-wrap">
+                            <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 2" />
+                        </div>
+                        <div class="ba-handle">
+                            <div class="ba-knob">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M9 6L15 12L9 18" />
+                                    <path d="M15 6L9 12L15 18" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ba-labels">
+                            <span class="ba-label-before">Before</span>
+                            <span class="ba-label-after">After</span>
+                        </div>
+                        <div class="ba-drag-hint">← drag to compare →</div>
+                    </div>
+                </div>
+                <div class="ba-slider-wrapper">
+                    <div class="ba-slider-container">
+                        <img class="ba-img-before" src="https://images.pexels.com/photos/162651/parking-parking-garage-covered-parking-162651.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 3" />
+                        <div class="ba-img-after-wrap">
+                            <img src="https://images.pexels.com/photos/7512699/pexels-photo-7512699.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 3" />
+                        </div>
+                        <div class="ba-handle">
+                            <div class="ba-knob">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M9 6L15 12L9 18" />
+                                    <path d="M15 6L9 12L15 18" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ba-labels">
+                            <span class="ba-label-before">Before</span>
+                            <span class="ba-label-after">After</span>
+                        </div>
+                        <div class="ba-drag-hint">← drag to compare →</div>
+                    </div>
+                </div>
+                <div class="ba-slider-wrapper">
+                    <div class="ba-slider-container">
+                        <img class="ba-img-before" src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 4" />
+                        <div class="ba-img-after-wrap">
+                            <img src="https://images.pexels.com/photos/162121/industrial-factory-industrial-building-plant-162121.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 4" />
+                        </div>
+                        <div class="ba-handle">
+                            <div class="ba-knob">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M9 6L15 12L9 18" />
+                                    <path d="M15 6L9 12L15 18" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ba-labels">
+                            <span class="ba-label-before">Before</span>
+                            <span class="ba-label-after">After</span>
+                        </div>
+                        <div class="ba-drag-hint">← drag to compare →</div>
+                    </div>
+                </div>
+                </div>
+
+      </div>
+    </section>
+
+    <section class="section-how-we-work">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-chart-line"></i> <span data-en="OUR PROCESS" data-ar="عمليتنا">OUR PROCESS</span></span>
+          <h2 class="section-title" data-en="How We Deliver This Service" data-ar="كيف نقدم هذه الخدمة">How We Deliver This Service</h2>
+          <p class="section-subtitle" data-en="A clear 4-step process from first call to final warranty handover." data-ar="عملية واضحة من 4 خطوات من أول اتصال إلى تسليم الضمان النهائي.">A clear 4-step process from first call to final warranty handover.</p>
+          <div class="section-divider"></div>
+        </div>
+        <div class="process-timeline">
+          <div class="process-step slide-up-card"><div class="process-number">1</div><div class="process-icon"><i class="fas fa-phone-alt"></i></div><h3 class="process-title" data-en="Free Consultation" data-ar="استشارة مجانية">Free Consultation</h3><p class="process-text" data-en="Call or WhatsApp us. Tell us your problem and location." data-ar="اتصل بنا أو واتساب. أخبرنا بمشكلتك وموقعك.">Call or WhatsApp us. Tell us your problem and location.</p></div>
+          <div class="process-connector"></div>
+          <div class="process-step slide-up-card"><div class="process-number">2</div><div class="process-icon"><i class="fas fa-search"></i></div><h3 class="process-title" data-en="Site Inspection" data-ar="تفتيش الموقع">Site Inspection</h3><p class="process-text" data-en="Our expert visits your site and prepares a detailed solution." data-ar="خبيرنا يزور موقعك ويعد حلاً مفصلاً.">Our expert visits your site and prepares a detailed solution.</p></div>
+          <div class="process-connector"></div>
+          <div class="process-step slide-up-card"><div class="process-number">3</div><div class="process-icon"><i class="fas fa-hammer"></i></div><h3 class="process-title" data-en="Work Execution" data-ar="تنفيذ العمل">Work Execution</h3><p class="process-text" data-en="Our certified team executes using premium materials." data-ar="فريقنا المعتمد ينفذ باستخدام مواد متميزة.">Our certified team executes using premium materials.</p></div>
+          <div class="process-connector"></div>
+          <div class="process-step slide-up-card"><div class="process-number">4</div><div class="process-icon"><i class="fas fa-shield-check"></i></div><h3 class="process-title" data-en="Quality Check & Warranty" data-ar="فحص الجودة والضمان">Quality Check & Warranty</h3><p class="process-text" data-en="Full quality inspection and 5-year written warranty." data-ar="فحص جودة كامل وضمان كتابي لمدة 5 سنوات.">Full quality inspection and 5-year written warranty.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-question-circle"></i> <span data-en="FREQUENTLY ASKED QUESTIONS" data-ar="الأسئلة الشائعة">FREQUENTLY ASKED QUESTIONS</span></span>
+          <h2 class="section-title" data-en="General Construction — Common Questions" data-ar="البناء العام - أسئلة شائعة">General Construction — Common Questions</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item"><div class="faq-question"><span data-en="1. Do you handle both residential and commercial projects?" data-ar="1. هل تتعاملون مع المشاريع السكنية والتجارية؟">1. Do you handle both residential and commercial projects?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer" data-en="Yes, we handle villa construction, home renovations, and commercial fit-outs across Saudi Arabia." data-ar="نقدم خدمات بناء شاملة تشمل المشاريع السكنية والتجارية، من الأساسات وحتى التشطيبات النهائية.">Yes, we handle villa construction, home renovations, and commercial fit-outs across Saudi Arabia.</div></div>
+          <div class="faq-item"><div class="faq-question"><span data-en="2. Will one project manager oversee my entire build?" data-ar="2. هل سيشرف مدير مشروع واحد على البناء بالكامل؟">2. Will one project manager oversee my entire build?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer" data-en="Yes, a dedicated project manager and supervisor oversee every stage of the project from planning to handover." data-ar="نعم، فريقنا مرخص ومعتمد ويتبع معايير البناء السعودية والدولية في جميع مراحل التنفيذ.">Yes, a dedicated project manager and supervisor oversee every stage of the project from planning to handover.</div></div>
+          <div class="faq-item"><div class="faq-question"><span data-en="3. Can you combine construction with waterproofing work?" data-ar="3. هل يمكن دمج البناء مع أعمال العزل المائي؟">3. Can you combine construction with waterproofing work?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer" data-en="Absolutely — as a specialist waterproofing and construction company, we often integrate waterproofing directly into new builds and renovations." data-ar="تعتمد المدة على حجم المشروع ونطاقه، وسنقدم لك جدولاً زمنيًا مفصلاً بعد زيارة الموقع وتقييم المتطلبات.">Absolutely — as a specialist waterproofing and construction company, we often integrate waterproofing directly into new builds and renovations.</div></div>
+          <div class="faq-item"><div class="faq-question"><span data-en="4. How is project timeline and budget managed?" data-ar="4. كيف تتم إدارة الجدول الزمني والميزانية؟">4. How is project timeline and budget managed?</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer" data-en="We provide a clear project plan with milestones and budget breakdowns upfront, and give regular progress updates throughout construction." data-ar="نعم، نوفر إشرافًا هندسيًا ومتابعة يومية لضمان جودة التنفيذ والالتزام بالميزانية والجدول الزمني المتفق عليه.">We provide a clear project plan with milestones and budget breakdowns upfront, and give regular progress updates throughout construction.</div></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-gradient">
+      <div class="container">
+        <div class="cta-section">
+          <i class="fas fa-building" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+          <h2 style="font-size: 1.8rem; font-weight: 700; color: #1f2937;" data-en="Need General Construction?" data-ar="هل تحتاج البناء العام؟">Need General Construction?</h2>
+          <p style="color: #6b7280; max-width: 600px; margin: 1rem auto;" data-en="Contact MDS Contracting today for a free consultation and site inspection." data-ar="اتصل بشركة MDS Contracting اليوم للحصول على استشارة مجانية وتفتيش الموقع.">Contact MDS Contracting today for a free consultation and site inspection.</p>
+          <div class="hero-buttons" style="justify-content: center; margin-top: 1.5rem;">
+            <a href="contact.html#contactForm" class="btn-primary"><i class="fas fa-paper-plane"></i> <span data-en="Get Free Consultation" data-ar="احصل على استشارة مجانية">Get Free Consultation</span></a>
+            <a href="tel:+966114567890" class="btn-outline" style="border-color: var(--primary); color: var(--primary);"><i class="fas fa-phone-alt"></i> <span data-en="Call Now" data-ar="اتصل الآن">Call Now</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div><i class="fas fa-hard-hat footer-icon"></i><h3 class="footer-title">MDS Contracting</h3><p class="footer-text" data-en="Leading waterproofing & construction experts in Saudi Arabia." data-ar="خبراء رائدون في العزل المائي والبناء في المملكة العربية السعودية.">Leading waterproofing & construction experts in Saudi Arabia.</p></div>
+      <div><h4 class="footer-heading" data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4><ul class="footer-links"><li><a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a></li><li><a href="services.html" data-en="Services" data-ar="الخدمات">Services</a></li><li><a href="about.html" data-en="About Us" data-ar="من نحن">About Us</a></li><li><a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a></li></ul></div>
+      <div><h4 class="footer-heading" data-en="Our Services" data-ar="خدماتنا">Our Services</h4><ul class="footer-links"><li><i class="fas fa-water text-primary text-xs mr-2"></i> <a href="liquid-waterproofing.html" data-en="Liquid Waterproofing" data-ar="العزل المائي السائل">Liquid Waterproofing</a></li><li><i class="fas fa-layer-group text-primary text-xs mr-2"></i> <a href="cementitious-waterproofing.html" data-en="Cementitious" data-ar="الأسمنتي">Cementitious</a></li><li><i class="fas fa-hard-hat text-primary text-xs mr-2"></i> <a href="bituminous-membrane.html" data-en="Bituminous Membrane" data-ar="الغشاء البيتوميني">Bituminous Membrane</a></li><li><i class="fas fa-building text-primary text-xs mr-2"></i> <a href="general-construction.html" data-en="General Construction" data-ar="البناء العام">General Construction</a></li></ul></div>
+      <div><h4 class="footer-heading" data-en="Follow Us" data-ar="تابعونا">Follow Us</h4><div class="social-icons"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div><p class="follow-text" data-en="Stay connected for updates" data-ar="ابق على اتصال للحصول على التحديثات">Stay connected for updates</p></div>
+    </div>
+    <div class="footer-bottom">© 2026 MDS Contracting – Riyadh, Saudi Arabia | <span data-en="International Waterproofing & Construction Standards" data-ar="معايير العزل المائي والبناء الدولية">International Waterproofing & Construction Standards</span></div>
+  </footer>
+
+  <a href="https://wa.me/9665082247563?text=Hello%2C%20I%20need%20waterproofing%20services." class="floating-whatsapp" target="_blank">
+    <div class="pulse-ring"></div>
+    <i class="fab fa-whatsapp"></i>
+    <span class="tooltip" data-en="Chat with us on WhatsApp" data-ar="تحدث معنا على واتساب">Chat with us on WhatsApp</span>
+  </a>
+
+  <!-- ============================================================== -->
+  <!-- ===== JAVASCRIPT ===== -->
+  <!-- ============================================================== -->
+  <script>
+        // ==============================================================
+        // BEFORE / AFTER SLIDERS (multi-instance gallery)
+        // ==============================================================
+        document.querySelectorAll('.ba-slider-wrapper').forEach(function (wrapper) {
+            const container = wrapper.querySelector('.ba-slider-container');
+            const afterWrap = wrapper.querySelector('.ba-img-after-wrap');
+            const handle = wrapper.querySelector('.ba-handle');
+            const hint = wrapper.querySelector('.ba-drag-hint');
+
+            let isDragging = false;
+            let currentPos = 50;
+
+            function updateSlider(pos) {
+                pos = Math.max(0, Math.min(100, pos));
+                currentPos = pos;
+                const isRTL = document.body.classList.contains('rtl');
+                if (isRTL) {
+                    afterWrap.style.clipPath = 'inset(0 0 0 ' + (100 - pos) + '%)';
+                } else {
+                    afterWrap.style.clipPath = 'inset(0 ' + (100 - pos) + '% 0 0)';
+                }
+                handle.style.left = pos + '%';
+            }
+
+            function getPos(e) {
+                const rect = container.getBoundingClientRect();
+                const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+                let x = (clientX - rect.left) / rect.width;
+                if (document.body.classList.contains('rtl')) {
+                    x = 1 - x;
+                }
+                return x * 100;
+            }
+
+            function onStart(e) {
+                isDragging = true;
+                handle.classList.add('active');
+                if (hint) hint.classList.add('hidden');
+                document.body.style.userSelect = 'none';
+                document.body.style.webkitUserSelect = 'none';
+                updateSlider(getPos(e));
+                e.preventDefault();
+            }
+
+            function onMove(e) {
+                if (!isDragging) return;
+                updateSlider(getPos(e));
+                e.preventDefault();
+            }
+
+            function onEnd() {
+                if (isDragging) {
+                    isDragging = false;
+                    handle.classList.remove('active');
+                    document.body.style.userSelect = '';
+                    document.body.style.webkitUserSelect = '';
+                }
+            }
+
+            handle.addEventListener('mousedown', onStart);
+            document.addEventListener('mousemove', onMove);
+            document.addEventListener('mouseup', onEnd);
+
+            handle.addEventListener('touchstart', onStart, { passive: false });
+            document.addEventListener('touchmove', onMove, { passive: false });
+            document.addEventListener('touchend', onEnd);
+            document.addEventListener('touchcancel', onEnd);
+
+            container.addEventListener('click', function (e) {
+                if (e.target.closest && e.target.closest('.ba-handle')) return;
+                updateSlider(getPos(e));
+                if (hint) hint.classList.add('hidden');
+            });
+
+            updateSlider(50);
+
+            wrapper._baUpdate = updateSlider;
+            wrapper._baGetPos = () => currentPos;
+        });
+
+        let baResizeTimer;
+        window.addEventListener('resize', function () {
+            clearTimeout(baResizeTimer);
+            baResizeTimer = setTimeout(() => {
+                document.querySelectorAll('.ba-slider-wrapper').forEach(function (w) {
+                    if (w._baUpdate) w._baUpdate(w._baGetPos());
+                });
+            }, 100);
+        });
+
+        const baLangObserver = new MutationObserver(function () {
+            setTimeout(() => {
+                document.querySelectorAll('.ba-slider-wrapper').forEach(function (w) {
+                    if (w._baUpdate) w._baUpdate(w._baGetPos());
+                });
+            }, 50);
+        });
+        baLangObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+        // ==============================================================
+        // MOBILE MENU
+        // ==============================================================
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('show'));
+        }
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.remove('show'));
+        });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
+
+        // ==============================================================
+        // FAQ ACCORDION
+        // ==============================================================
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                if (!isActive) item.classList.add('active');
+            });
+        });
+        if (document.querySelector('.faq-item')) {
+            document.querySelector('.faq-item').classList.add('active');
+        }
+
+        // ==============================================================
+        // SCROLL ANIMATION
+        // ==============================================================
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.slide-left-card, .slide-up-card, .scroll-animate').forEach(el => observer.observe(el));
+
+        function updateLanguage(lang) {
+            document.querySelectorAll('[data-en], [data-ar]').forEach(el => {
+                if (lang === 'en' && el.hasAttribute('data-en')) {
+                    el.innerHTML = el.getAttribute('data-en');
+                } else if (lang === 'ar' && el.hasAttribute('data-ar')) {
+                    el.innerHTML = el.getAttribute('data-ar');
+                }
+            });
+            document.querySelectorAll('input, textarea, select').forEach(el => {
+                if (lang === 'en' && el.hasAttribute('data-en-placeholder')) {
+                    el.placeholder = el.getAttribute('data-en-placeholder');
+                } else if (lang === 'ar' && el.hasAttribute('data-ar-placeholder')) {
+                    el.placeholder = el.getAttribute('data-ar-placeholder');
+                }
+            });
+            if (lang === 'ar') {
+                document.body.classList.add('rtl');
+                document.body.style.direction = 'rtl';
+                document.body.style.textAlign = 'right';
+            } else {
+                document.body.classList.remove('rtl');
+                document.body.style.direction = 'ltr';
+                document.body.style.textAlign = 'left';
+            }
+            localStorage.setItem('preferredLanguage', lang);
+            document.querySelectorAll('.lang-btn-center').forEach(btn => {
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            setTimeout(() => updateSlider(currentPos), 100);
+        }
+
+        const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+        updateLanguage(savedLang);
+        document.querySelectorAll('.lang-btn-center').forEach(btn => {
+            btn.addEventListener('click', () => updateLanguage(btn.getAttribute('data-lang')));
+        });
+    </script>
+</body>
+</html>

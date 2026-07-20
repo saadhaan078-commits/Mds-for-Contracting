@@ -146,13 +146,6 @@ window.addEventListener('scroll', () => {
   else navbar.classList.remove('scrolled');
 });
 
-// ======================== FLIP CARDS ========================
-function flipHandler(e) { this.classList.toggle('flipped'); }
-document.querySelectorAll('.flip-card[data-flip]').forEach(card => {
-  card.removeEventListener('click', flipHandler);
-  card.addEventListener('click', flipHandler);
-});
-
 // ======================== ANIMATED COUNTER ========================
 function animateCounter(element, target, suffix = '', duration = 500) {
   let start = 0;
@@ -431,10 +424,108 @@ serviceTiles.forEach(tile => {
   });
 });
 
+// ======================== CAROUSEL (4-IMAGE SLIDER) ========================
+function initCarousel(wrapper) {
+  const container = wrapper.querySelector('.carousel-container');
+  const track = wrapper.querySelector('.carousel-track');
+  const slides = track ? Array.from(track.children) : [];
+  const prevBtn = wrapper.querySelector('.carousel-btn.prev');
+  const nextBtn = wrapper.querySelector('.carousel-btn.next');
+  const dotsContainer = wrapper.querySelector('.carousel-dots');
+  
+  if (!container || !track || slides.length === 0) return;
+
+  let currentSlide = 0;
+  let autoInterval = null;
+  let isHovering = false;
+
+  function goTo(index) {
+    if (index < 0) index = slides.length - 1;
+    if (index >= slides.length) index = 0;
+    currentSlide = index;
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    // update dots
+    if (dotsContainer) {
+      const dots = dotsContainer.querySelectorAll('.carousel-dot');
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === currentSlide));
+    }
+  }
+
+  function next() { goTo(currentSlide + 1); }
+  function prev() { goTo(currentSlide - 1); }
+
+  // create dots
+  if (dotsContainer) {
+    dotsContainer.innerHTML = '';
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.classList.add('carousel-dot');
+      if (i === 0) dot.classList.add('active');
+      dot.setAttribute('aria-label', `Go to slide ${i+1}`);
+      dot.addEventListener('click', () => {
+        goTo(i);
+        resetAuto();
+      });
+      dotsContainer.appendChild(dot);
+    });
+  }
+
+  // buttons
+  if (prevBtn) prevBtn.addEventListener('click', () => { prev(); resetAuto(); });
+  if (nextBtn) nextBtn.addEventListener('click', () => { next(); resetAuto(); });
+
+  // keyboard
+  wrapper.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') { prev(); resetAuto(); e.preventDefault(); }
+    if (e.key === 'ArrowRight') { next(); resetAuto(); e.preventDefault(); }
+  });
+
+  // touch / swipe
+  let touchStartX = 0;
+  let touchEndX = 0;
+  wrapper.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+  wrapper.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 40) {
+      if (diff > 0) { next(); resetAuto(); }
+      else { prev(); resetAuto(); }
+    }
+  }, { passive: true });
+
+  // auto-slide
+  function startAuto() {
+    if (autoInterval) clearInterval(autoInterval);
+    if (slides.length <= 1) return;
+    autoInterval = setInterval(() => {
+      if (!isHovering) next();
+    }, 3000);
+  }
+
+  function resetAuto() {
+    startAuto();
+  }
+
+  // pause on hover
+  wrapper.addEventListener('mouseenter', () => { isHovering = true; });
+  wrapper.addEventListener('mouseleave', () => { isHovering = false; });
+
+  // init
+  goTo(0);
+  startAuto();
+
+  // window resize - no op needed
+}
+
 // ======================== INITIALIZE ========================
 document.addEventListener('DOMContentLoaded', function() {
   initLanguageButtons();
   initFaqAccordion();
+  
+  // Initialize all carousels
+  document.querySelectorAll('.carousel-wrapper').forEach(initCarousel);
 });
 
 // ======================== RE-RUN ON PAGE SHOW ========================
