@@ -1118,12 +1118,7 @@
             function updateSlider(pos) {
                 pos = Math.max(0, Math.min(100, pos));
                 currentPos = pos;
-                const isRTL = document.body.classList.contains('rtl');
-                if (isRTL) {
-                    afterWrap.style.clipPath = 'inset(0 0 0 ' + (100 - pos) + '%)';
-                } else {
-                    afterWrap.style.clipPath = 'inset(0 ' + (100 - pos) + '% 0 0)';
-                }
+                afterWrap.style.clipPath = 'inset(0 0 0 ' + pos + '%)';
                 handle.style.left = pos + '%';
             }
 

@@ -913,7 +913,7 @@
             <p class="story-text mt-4" data-en="From initial planning and design approval to final handover, our project managers keep your build on schedule, on budget, and to international construction standards — the same standards we apply to our waterproofing work." data-ar="من التخطيط الأولي والموافقة على التصميم إلى التسليم النهائي، يحافظ مديرو مشاريعنا على جدولك الزمني وميزانيتك ومعايير البناء الدولية.">From initial planning and design approval to final handover, our project managers keep your build on schedule, on budget, and to international construction standards — the same standards we apply to our waterproofing work.</p>
           </div>
           <div class="img-hover-zoom">
-            <img src="Genenral Construction.jfif" alt="General Construction" class="zoom-img">
+            <img src="images/other/General Construction.jpg" alt="General Construction" class="zoom-img">
           </div>
         </div>
       </div>
@@ -947,9 +947,9 @@
         <div class="ba-gallery-grid">
                 <div class="ba-slider-wrapper">
                     <div class="ba-slider-container">
-                        <img class="ba-img-before" src="https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 1" />
+                        <img class="ba-img-before" src="images/before/General Construction project 01 before.jpeg" alt="Before 1" />
                         <div class="ba-img-after-wrap">
-                            <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 1" />
+                            <img src="images/after/General construction project 01 after.jpeg" alt="After 1" />
                         </div>
                         <div class="ba-handle">
                             <div class="ba-knob">
@@ -968,51 +968,9 @@
                 </div>
                 <div class="ba-slider-wrapper">
                     <div class="ba-slider-container">
-                        <img class="ba-img-before" src="https://images.pexels.com/photos/209226/pexels-photo-209226.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 2" />
+                        <img class="ba-img-before" src="images/before/General Construction project 02 before.jpeg" alt="Before 2" />
                         <div class="ba-img-after-wrap">
-                            <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 2" />
-                        </div>
-                        <div class="ba-handle">
-                            <div class="ba-knob">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M9 6L15 12L9 18" />
-                                    <path d="M15 6L9 12L15 18" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="ba-labels">
-                            <span class="ba-label-before">Before</span>
-                            <span class="ba-label-after">After</span>
-                        </div>
-                        <div class="ba-drag-hint">← drag to compare →</div>
-                    </div>
-                </div>
-                <div class="ba-slider-wrapper">
-                    <div class="ba-slider-container">
-                        <img class="ba-img-before" src="https://images.pexels.com/photos/162651/parking-parking-garage-covered-parking-162651.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 3" />
-                        <div class="ba-img-after-wrap">
-                            <img src="https://images.pexels.com/photos/7512699/pexels-photo-7512699.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 3" />
-                        </div>
-                        <div class="ba-handle">
-                            <div class="ba-knob">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M9 6L15 12L9 18" />
-                                    <path d="M15 6L9 12L15 18" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="ba-labels">
-                            <span class="ba-label-before">Before</span>
-                            <span class="ba-label-after">After</span>
-                        </div>
-                        <div class="ba-drag-hint">← drag to compare →</div>
-                    </div>
-                </div>
-                <div class="ba-slider-wrapper">
-                    <div class="ba-slider-container">
-                        <img class="ba-img-before" src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 4" />
-                        <div class="ba-img-after-wrap">
-                            <img src="https://images.pexels.com/photos/162121/industrial-factory-industrial-building-plant-162121.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 4" />
+                            <img src="images/after/General construction project 02 after.jfif" alt="After 2" />
                         </div>
                         <div class="ba-handle">
                             <div class="ba-knob">
@@ -1118,12 +1076,7 @@
             function updateSlider(pos) {
                 pos = Math.max(0, Math.min(100, pos));
                 currentPos = pos;
-                const isRTL = document.body.classList.contains('rtl');
-                if (isRTL) {
-                    afterWrap.style.clipPath = 'inset(0 0 0 ' + (100 - pos) + '%)';
-                } else {
-                    afterWrap.style.clipPath = 'inset(0 ' + (100 - pos) + '% 0 0)';
-                }
+                afterWrap.style.clipPath = 'inset(0 0 0 ' + pos + '%)';
                 handle.style.left = pos + '%';
             }
 

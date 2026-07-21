@@ -948,9 +948,9 @@
         <div class="ba-gallery-grid">
                 <div class="ba-slider-wrapper">
                     <div class="ba-slider-container">
-                        <img class="ba-img-before" src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 1" />
+                        <img class="ba-img-before" src="images/before/liquid waterproofing project 01 before.jpeg" alt="Before 1" />
                         <div class="ba-img-after-wrap">
-                            <img src="https://images.pexels.com/photos/7512699/pexels-photo-7512699.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 1" />
+                            <img src="images/after/Liquid Waterproofing project 01 after.jpeg" alt="After 1" />
                         </div>
                         <div class="ba-handle">
                             <div class="ba-knob">
@@ -969,9 +969,9 @@
                 </div>
                 <div class="ba-slider-wrapper">
                     <div class="ba-slider-container">
-                        <img class="ba-img-before" src="https://images.pexels.com/photos/209226/pexels-photo-209226.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 2" />
+                        <img class="ba-img-before" src="images/before/liquid waterproofing project 02 before.png" alt="Before 2" />
                         <div class="ba-img-after-wrap">
-                            <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 2" />
+                            <img src="images/after/liquid waterproofing project 02 after.webp" alt="After 2" />
                         </div>
                         <div class="ba-handle">
                             <div class="ba-knob">
@@ -990,9 +990,9 @@
                 </div>
                 <div class="ba-slider-wrapper">
                     <div class="ba-slider-container">
-                        <img class="ba-img-before" src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 3" />
+                        <img class="ba-img-before" src="images/before/Liquid Waterproofing project 03 before.jpeg" alt="Before 3" />
                         <div class="ba-img-after-wrap">
-                            <img src="https://images.pexels.com/photos/162651/parking-parking-garage-covered-parking-162651.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 3" />
+                            <img src="images/after/Liquid waterproofing project 03 after.jpeg" alt="After 3" />
                         </div>
                         <div class="ba-handle">
                             <div class="ba-knob">
@@ -1011,9 +1011,9 @@
                 </div>
                 <div class="ba-slider-wrapper">
                     <div class="ba-slider-container">
-                        <img class="ba-img-before" src="https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 4" />
+                        <img class="ba-img-before" src="images/before/Liquid Waterproofing project 04 before.jpeg" alt="Before 4" />
                         <div class="ba-img-after-wrap">
-                            <img src="https://images.pexels.com/photos/162121/industrial-factory-industrial-building-plant-162121.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 4" />
+                            <img src="images/after/Liquid Waterpoofing project 04 after.jpeg" alt="After 4" />
                         </div>
                         <div class="ba-handle">
                             <div class="ba-knob">
@@ -1120,12 +1120,7 @@
             function updateSlider(pos) {
                 pos = Math.max(0, Math.min(100, pos));
                 currentPos = pos;
-                const isRTL = document.body.classList.contains('rtl');
-                if (isRTL) {
-                    afterWrap.style.clipPath = 'inset(0 0 0 ' + (100 - pos) + '%)';
-                } else {
-                    afterWrap.style.clipPath = 'inset(0 ' + (100 - pos) + '% 0 0)';
-                }
+                afterWrap.style.clipPath = 'inset(0 0 0 ' + pos + '%)';
                 handle.style.left = pos + '%';
             }
 

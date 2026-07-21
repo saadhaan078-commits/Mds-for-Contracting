@@ -920,7 +920,7 @@
                         <p class="story-text mt-4" data-en="Because it remains breathable while blocking water, it is one of the most reliable long-term solutions for underground structures across Saudi Arabia, where rising damp and groundwater pressure are common challenges." data-ar="نظرًا لأنه يبقى قابلاً للتنفس أثناء منع الماء، فهو أحد أكثر الحلول طويلة الأمد موثوقية للهياكل الجوفية في جميع أنحاء المملكة العربية السعودية.">Because it remains breathable while blocking water, it is one of the most reliable long-term solutions for underground structures across Saudi Arabia, where rising damp and groundwater pressure are common challenges.</p>
                     </div>
                     <div class="img-hover-zoom">
-                        <img src="cementitious Waterproofing.jpg" alt="Cementitious Waterproofing" class="zoom-img" />
+                        <img src="images/other/cementitious Waterproofing.jpg" alt="Cementitious Waterproofing" class="zoom-img" />
                     </div>
                 </div>
             </div>
@@ -959,9 +959,9 @@
                 <div class="ba-gallery-grid">
                 <div class="ba-slider-wrapper">
                     <div class="ba-slider-container">
-                        <img class="ba-img-before" src="cementinous project 01 before.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 1" />
+                        <img class="ba-img-before" src="images/before/Cementinous waterproofing project 01 before.jpeg" alt="Before 1" />
                         <div class="ba-img-after-wrap">
-                            <img src="cementinous project 01 after.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 1" />
+                            <img src="images/after/Cementinous waterproofing project 01 after.jpeg" alt="After 1" />
                         </div>
                         <div class="ba-handle">
                             <div class="ba-knob">
@@ -980,9 +980,9 @@
                 </div>
                 <div class="ba-slider-wrapper">
                     <div class="ba-slider-container">
-                        <img class="ba-img-before" src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 2" />
+                        <img class="ba-img-before" src="images/before/Cementinous waterproofing project 02 before.jpeg" alt="Before 2" />
                         <div class="ba-img-after-wrap">
-                            <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 2" />
+                            <img src="images/after/Cementinous waterproofing project 02 after.jpeg" alt="After 2" />
                         </div>
                         <div class="ba-handle">
                             <div class="ba-knob">
@@ -1001,9 +1001,9 @@
                 </div>
                 <div class="ba-slider-wrapper">
                     <div class="ba-slider-container">
-                        <img class="ba-img-before" src="https://images.pexels.com/photos/162121/industrial-factory-industrial-building-plant-162121.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 3" />
+                        <img class="ba-img-before" src="images/before/Cementinous waterproofing project 03 before.jpeg" alt="Before 3" />
                         <div class="ba-img-after-wrap">
-                            <img src="https://images.pexels.com/photos/209226/pexels-photo-209226.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 3" />
+                            <img src="images/after/Cementinous waterproofing project 03 after.jpeg" alt="After 3" />
                         </div>
                         <div class="ba-handle">
                             <div class="ba-knob">
@@ -1022,9 +1022,9 @@
                 </div>
                 <div class="ba-slider-wrapper">
                     <div class="ba-slider-container">
-                        <img class="ba-img-before" src="https://images.pexels.com/photos/162651/parking-parking-garage-covered-parking-162651.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Before 4" />
+                        <img class="ba-img-before" src="images/before/Cementinous waterproofing project 04 before.jpeg" alt="Before 4" />
                         <div class="ba-img-after-wrap">
-                            <img src="https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&w=800" alt="After 4" />
+                            <img src="images/after/Cementinous waterproofing project 04 after.jpeg" alt="After 4" />
                         </div>
                         <div class="ba-handle">
                             <div class="ba-knob">
@@ -1138,12 +1138,7 @@
             function updateSlider(pos) {
                 pos = Math.max(0, Math.min(100, pos));
                 currentPos = pos;
-                const isRTL = document.body.classList.contains('rtl');
-                if (isRTL) {
-                    afterWrap.style.clipPath = 'inset(0 0 0 ' + (100 - pos) + '%)';
-                } else {
-                    afterWrap.style.clipPath = 'inset(0 ' + (100 - pos) + '% 0 0)';
-                }
+                afterWrap.style.clipPath = 'inset(0 0 0 ' + pos + '%)';
                 handle.style.left = pos + '%';
             }
 
@@ -1182,20 +1177,14 @@
                 }
             }
 
-            handle.addEventListener('mousedown', onStart);
+            container.addEventListener('mousedown', onStart);
             document.addEventListener('mousemove', onMove);
             document.addEventListener('mouseup', onEnd);
 
-            handle.addEventListener('touchstart', onStart, { passive: false });
+            container.addEventListener('touchstart', onStart, { passive: false });
             document.addEventListener('touchmove', onMove, { passive: false });
             document.addEventListener('touchend', onEnd);
             document.addEventListener('touchcancel', onEnd);
-
-            container.addEventListener('click', function (e) {
-                if (e.target.closest && e.target.closest('.ba-handle')) return;
-                updateSlider(getPos(e));
-                if (hint) hint.classList.add('hidden');
-            });
 
             updateSlider(50);
 
