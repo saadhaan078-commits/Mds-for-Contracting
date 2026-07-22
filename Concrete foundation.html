@@ -802,16 +802,6 @@
       .ba-drag-hint { font-size: 0.45rem; bottom: 3.2rem; padding: 0.1rem 0.5rem; }
     }
 
-    .rtl .ba-handle {
-      left: 50%;
-      transform: translateX(50%);
-    }
-    .rtl .ba-labels {
-      flex-direction: row-reverse;
-    }
-    .rtl .ba-label-before { order: 2; }
-    .rtl .ba-label-after { order: 1; }
-
     .slide-left-card {
       opacity: 0;
       transform: translateX(-50px);
@@ -831,8 +821,6 @@
       transform: translateY(0);
     }
   
-    .rtl .ba-drag-hint { direction: ltr; }
-
     /* ===== IMAGE HOVER ZOOM ===== */
     .img-hover-zoom {
       width: 100%;
@@ -858,7 +846,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <div class="logo-area">
-        <img src="mds logo.jpeg" alt="MDS Logo" class="logo-img" onerror="this.src='https://placehold.co/200x200/0f67b3/white?text=MDS'">
+        <img src="images/other/mds logo.webp" alt="MDS Logo" class="logo-img" onerror="this.src='https://placehold.co/200x200/0f67b3/white?text=MDS'">
         <div><h1 class="logo-text">MDS <span class="text-primary">Contracting</span></h1><p class="logo-subtext">Riyadh, Saudi Arabia</p></div>
       </div>
       <div class="lang-center">
@@ -884,7 +872,7 @@
 
   <main>
     <section class="page-hero-section">
-      <img src="images/other/Concrete Foundation.jpg" alt="Concrete & Foundation Repair" class="hero-bg-image">
+      <img src="images/other/Concrete Foundation.webp" alt="Concrete & Foundation Repair" class="hero-bg-image">
       <div class="page-hero-overlay"></div>
       <div class="page-hero-content">
         <h1 class="page-hero-title"><span data-en="Concrete & Foundation Repair" data-ar="إصلاح الخرسانة والأساسات">Concrete & Foundation Repair</span></h1>
@@ -913,7 +901,7 @@
             <p class="story-text mt-4" data-en="We assess the root cause of the damage — whether it's soil movement, water intrusion, or material fatigue — and apply the correct repair method to restore structural integrity and prevent the problem from returning." data-ar="نقوم بتقييم السبب الجذري للضرر - سواء كان حركة التربة أو تسرب المياه أو إجهاد المواد - ونطبق طريقة الإصلاح الصحيحة لاستعادة السلامة الهيكلية.">We assess the root cause of the damage — whether it's soil movement, water intrusion, or material fatigue — and apply the correct repair method to restore structural integrity and prevent the problem from returning.</p>
           </div>
           <div class="img-hover-zoom">
-            <img src="images/other/Concrete Foundation.jpg" alt="Concrete & Foundation Repair" class="zoom-img">
+            <img src="images/other/Concrete Foundation.webp" alt="Concrete & Foundation Repair" class="zoom-img">
           </div>
         </div>
       </div>
@@ -945,11 +933,11 @@
         </div>
 
         <div class="ba-gallery-grid">
-                <div class="ba-slider-wrapper">
+                <div class="ba-slider-wrapper" dir="ltr">
                     <div class="ba-slider-container">
-                        <img class="ba-img-before" src="images/before/Concrete foundation project 01 before.jpeg" alt="Before 1" />
+                        <img class="ba-img-before" src="images/before/Concrete foundation project 01 before.webp" alt="Before 1" />
                         <div class="ba-img-after-wrap">
-                            <img src="images/after/concrete Foundation project 01 after.jpeg" alt="After 1" />
+                            <img src="images/after/concrete Foundation project 01 after.webp" alt="After 1" />
                         </div>
                         <div class="ba-handle">
                             <div class="ba-knob">
@@ -966,11 +954,11 @@
                         <div class="ba-drag-hint">← drag to compare →</div>
                     </div>
                 </div>
-                <div class="ba-slider-wrapper">
+                <div class="ba-slider-wrapper" dir="ltr">
                     <div class="ba-slider-container">
-                        <img class="ba-img-before" src="images/before/concrete Foundation project 02 before.jpeg" alt="Before 2" />
+                        <img class="ba-img-before" src="images/before/concrete Foundation project 02 before.webp" alt="Before 2" />
                         <div class="ba-img-after-wrap">
-                            <img src="images/after/Concrete foundation project 02 after.jfif" alt="After 2" />
+                            <img src="images/after/General construction project 02 after.webp" alt="After 2" />
                         </div>
                         <div class="ba-handle">
                             <div class="ba-knob">
@@ -1084,9 +1072,6 @@
                 const rect = container.getBoundingClientRect();
                 const clientX = e.touches ? e.touches[0].clientX : e.clientX;
                 let x = (clientX - rect.left) / rect.width;
-                if (document.body.classList.contains('rtl')) {
-                    x = 1 - x;
-                }
                 return x * 100;
             }
 
